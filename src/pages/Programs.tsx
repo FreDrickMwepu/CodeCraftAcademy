@@ -25,6 +25,11 @@ const Programs: React.FC = () => {
     <div>
       {/* Hero */}
       <section className="programs-hero">
+        <img
+          src="/resources/Pilot%20Program%20Day%201/SML%20STUDIOS%20(18%20of%2043).jpg"
+          alt="Students at CodeCraft programs"
+          className="programs-hero-bg-img"
+        />
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <div className="tag tag--black">Our Curriculum</div>
           <h1>Programs Built for<br />Every Young Innovator</h1>

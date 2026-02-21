@@ -32,7 +32,13 @@ const About: React.FC = () => {
     <div>
       {/* Hero */}
       <section className="about-hero">
-        <div className="about-hero-bg"></div>
+        <div className="about-hero-bg">
+          <img
+            src="/resources/Pilot%20Program%20Day%201/SML%20STUDIOS%20(3%20of%2043).jpg"
+            alt="CodeCraft Academy classroom"
+            className="about-hero-bg-img"
+          />
+        </div>
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <div className="tag">About CodeCraft Academy</div>
           <h1>We're Building<br /><span>Zambia's Digital Future.</span></h1>
@@ -48,8 +54,37 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      {/* Mission Vision Values */}
+      {/* Photo Gallery */}
       <section className="section">
+        <div className="container">
+          <div className="section-header center">
+            <div className="tag">Our Story in Pictures</div>
+            <h2>Pilot Program Highlights</h2>
+            <p>Moments from our pilot program that showcase hands-on learning in action.</p>
+          </div>
+          <div className="photo-gallery">
+            {[
+              { src: 'SML%20STUDIOS%20(7%20of%2043).jpg', alt: 'Students working together' },
+              { src: 'SML%20STUDIOS%20(12%20of%2043).jpg', alt: 'Hands-on coding session' },
+              { src: 'SML%20STUDIOS%20(15%20of%2043).jpg', alt: 'Group learning activity' },
+              { src: 'SML%20STUDIOS%20(20%20of%2043).jpg', alt: 'Student presentation' },
+              { src: 'SML%20STUDIOS%20(25%20of%2043).jpg', alt: 'Collaborative project work' },
+              { src: 'SML%20STUDIOS%20(30%20of%2043).jpg', alt: 'Instructor guiding students' },
+            ].map((photo, i) => (
+              <div className="photo-gallery-item" key={i}>
+                <img
+                  src={`/resources/Pilot%20Program%20Day%201/${photo.src}`}
+                  alt={photo.alt}
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Mission Vision Values */}
+      <section className="section section--grey">
         <div className="container">
           <div className="section-header center">
             <div className="tag">Our Foundation</div>
