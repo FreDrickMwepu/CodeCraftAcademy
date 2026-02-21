@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaFacebookF, FaLinkedinIn, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
   return (
@@ -19,10 +20,10 @@ const Footer: React.FC = () => {
               Zambia. STEM education that's affordable, practical, and impactful.
             </p>
             <div className="footer-social">
-              <div className="social-btn">f</div>
-              <div className="social-btn">in</div>
-              <div className="social-btn">tw</div>
-              <div className="social-btn">ig</div>
+              <div className="social-btn"><FaFacebookF /></div>
+              <div className="social-btn"><FaLinkedinIn /></div>
+              <div className="social-btn"><FaTwitter /></div>
+              <div className="social-btn"><FaInstagram /></div>
             </div>
           </div>
           <div className="footer-col">

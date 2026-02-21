@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { HiCalendarDays, HiAcademicCap, HiComputerDesktop, HiChartBar, HiDevicePhoneMobile, HiBanknotes, HiBuildingLibrary } from 'react-icons/hi2';
 
 const feeCards = [
   {
@@ -52,10 +53,10 @@ const feeCards = [
 ];
 
 const schoolFeatures = [
-  { icon: '📅', title: 'Once-a-Week Delivery', desc: 'Sessions delivered once per week during the school term — minimal disruption, maximum impact.' },
-  { icon: '🏫', title: 'Onsite or Offsite', desc: 'We come to your school or learners travel to our hub — whichever works best for your situation.' },
-  { icon: '💻', title: 'Coding or Robotics', desc: 'Schools select the discipline that best serves their learners — software coding or hands-on robotics.' },
-  { icon: '📊', title: 'Progress Reports', desc: 'Regular progress reports for parents and schools, keeping everyone informed and engaged.' },
+  { icon: <HiCalendarDays />, title: 'Once-a-Week Delivery', desc: 'Sessions delivered once per week during the school term — minimal disruption, maximum impact.' },
+  { icon: <HiAcademicCap />, title: 'Onsite or Offsite', desc: 'We come to your school or learners travel to our hub — whichever works best for your situation.' },
+  { icon: <HiComputerDesktop />, title: 'Coding or Robotics', desc: 'Schools select the discipline that best serves their learners — software coding or hands-on robotics.' },
+  { icon: <HiChartBar />, title: 'Progress Reports', desc: 'Regular progress reports for parents and schools, keeping everyone informed and engaged.' },
 ];
 
 const Pricing: React.FC = () => {
@@ -157,14 +158,14 @@ const Pricing: React.FC = () => {
                   Payment Schedule
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '12px 0', borderBottom: '1px solid var(--grey-mid)' }}>
-                  <span style={{ fontSize: '1.5rem' }}>📅</span>
+                  <span style={{ fontSize: '1.5rem' }}><HiCalendarDays /></span>
                   <div>
                     <strong style={{ fontSize: '0.9rem' }}>Due at Start of Month</strong>
                     <p style={{ fontSize: '0.82rem', color: 'var(--grey-text)' }}>Payment is expected at the beginning of each month.</p>
                   </div>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '12px 0' }}>
-                  <span style={{ fontSize: '1.5rem' }}>🏫</span>
+                  <span style={{ fontSize: '1.5rem' }}><HiAcademicCap /></span>
                   <div>
                     <strong style={{ fontSize: '0.9rem' }}>School Fee Collection</strong>
                     <p style={{ fontSize: '0.82rem', color: 'var(--grey-text)' }}>Schools may collect fees directly from parents, or CodeCraft can manage payment.</p>
@@ -175,9 +176,9 @@ const Pricing: React.FC = () => {
                 We Accept
               </div>
               <div className="payment-methods">
-                <div className="payment-chip"><span>📱</span> Mobile Money</div>
-                <div className="payment-chip"><span>💵</span> Cash</div>
-                <div className="payment-chip"><span>🏦</span> Bank Transfer</div>
+                <div className="payment-chip"><span><HiDevicePhoneMobile /></span> Mobile Money</div>
+                <div className="payment-chip"><span><HiBanknotes /></span> Cash</div>
+                <div className="payment-chip"><span><HiBuildingLibrary /></span> Bank Transfer</div>
               </div>
             </div>
           </div>

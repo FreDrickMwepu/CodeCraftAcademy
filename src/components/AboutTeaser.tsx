@@ -1,10 +1,11 @@
 import React from 'react';
+import { HiOutlineLightBulb, HiOutlineStar, HiOutlineUserGroup, HiOutlineRocketLaunch } from 'react-icons/hi2';
 
 const values = [
-  { icon: '💡', title: 'Innovation', description: 'Encouraging creativity and new ways of thinking through every lesson.' },
-  { icon: '⭐', title: 'Excellence', description: 'Maintaining high standards in curriculum, delivery, and student outcomes.' },
-  { icon: '🤝', title: 'Inclusivity', description: 'Accessible to all learners, regardless of gender or background.' },
-  { icon: '🚀', title: 'Impact', description: 'Real-world problem solving that matters beyond the classroom.' },
+  { icon: <HiOutlineLightBulb />, title: 'Innovation', description: 'Encouraging creativity and new ways of thinking through every lesson.' },
+  { icon: <HiOutlineStar />, title: 'Excellence', description: 'Maintaining high standards in curriculum, delivery, and student outcomes.' },
+  { icon: <HiOutlineUserGroup />, title: 'Inclusivity', description: 'Accessible to all learners, regardless of gender or background.' },
+  { icon: <HiOutlineRocketLaunch />, title: 'Impact', description: 'Real-world problem solving that matters beyond the classroom.' },
 ];
 
 const AboutTeaser: React.FC = () => {

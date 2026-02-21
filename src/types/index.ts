@@ -1,8 +1,10 @@
+import React from 'react';
+
 export interface Program {
   id: number;
   title: string;
   description: string;
-  icon: string;
+  icon: React.ReactNode;
   ageRange: string;
   topics: string[];
 }
@@ -23,7 +25,7 @@ export interface StatItem {
 }
 
 export interface ValueItem {
-  icon: string;
+  icon: React.ReactNode;
   title: string;
   description: string;
 }
@@ -40,13 +42,13 @@ export interface FeeCard {
 }
 
 export interface DeliveryMode {
-  icon: string;
+  icon: React.ReactNode;
   title: string;
   description: string;
 }
 
 export interface ContactItem {
-  icon: string;
+  icon: React.ReactNode;
   label: string;
   lines: string[];
 }

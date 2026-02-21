@@ -1,23 +1,23 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import CTAStrip from '../components/CTAStrip';
+import { HiComputerDesktop, HiPuzzlePiece, HiPaintBrush, HiGlobeAlt, HiPlayCircle, HiCommandLine, HiCpuChip, HiCog6Tooth, HiAcademicCap, HiBuildingOffice2, HiCalendarDays, HiTrophy } from 'react-icons/hi2';
 
 const courses = [
-  { icon: '🖥️', title: 'Digital Literacy I & II', age: 'Ages 6–10', desc: 'Computer operations, internet safety, file management, and creative applications — the essential first step into the digital world.', topics: ['Computer Basics', 'Internet Safety', 'MS Office', 'Typing'] },
-  { icon: '🐱', title: 'Scratch Programming', age: 'Ages 7–13', desc: 'Visual block-based coding to build logic, creativity, and algorithmic thinking. Learners build their own games, stories, and animations.', topics: ['Block Coding', 'Game Design', 'Animation', 'Logic'] },
-  { icon: '🎨', title: 'Graphic Design', age: 'Ages 10–18+', desc: 'Visual communication and design thinking using industry tools. Learners design logos, posters, social media content, and digital branding.', topics: ['Canva', 'Illustration', 'Branding', 'Typography'] },
-  { icon: '🌐', title: 'Web Design', age: 'Ages 12–18+', desc: 'Build real, functional websites. Learners move from HTML basics to styled CSS layouts and interactive JavaScript features.', topics: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'] },
-  { icon: '🎮', title: 'Game Design', age: 'Ages 11–18+', desc: 'Design and build original games from concept to completion. Covers game mechanics, level design, and basic programming logic.', topics: ['Game Mechanics', 'Level Design', 'Storytelling'] },
-  { icon: '🐍', title: 'Python Programming', age: 'Ages 13–18+', desc: 'Industry-standard text-based programming. Covers variables, loops, functions, and real-world project development.', topics: ['Python', 'Algorithms', 'Data Structures', 'Projects'] },
-  { icon: '🤖', title: 'Robotics — Intro', age: 'Ages 10–14', desc: 'Build and program beginner robots using Micro:bit. Understand sensors, motors, and basic programming logic through hands-on challenges.', topics: ['Micro:bit', 'Sensors', 'Block Code', 'Challenges'] },
-  { icon: '⚙️', title: 'Robotics — Advanced', age: 'Ages 14–18+', desc: 'Advanced autonomous robot design using Arduino. Competition-ready preparation including inter-school robotics challenges and tech expos.', topics: ['Arduino', 'Autonomous Systems', 'Competition Prep'], featured: true },
+  { icon: <HiComputerDesktop />, title: 'Digital Literacy I & II', age: 'Ages 6–10', desc: 'Computer operations, internet safety, file management, and creative applications — the essential first step into the digital world.', topics: ['Computer Basics', 'Internet Safety', 'MS Office', 'Typing'] },
+  { icon: <HiPuzzlePiece />, title: 'Scratch Programming', age: 'Ages 7–13', desc: 'Visual block-based coding to build logic, creativity, and algorithmic thinking. Learners build their own games, stories, and animations.', topics: ['Block Coding', 'Game Design', 'Animation', 'Logic'] },
+  { icon: <HiPaintBrush />, title: 'Graphic Design', age: 'Ages 10–18+', desc: 'Visual communication and design thinking using industry tools. Learners design logos, posters, social media content, and digital branding.', topics: ['Canva', 'Illustration', 'Branding', 'Typography'] },
+  { icon: <HiGlobeAlt />, title: 'Web Design', age: 'Ages 12–18+', desc: 'Build real, functional websites. Learners move from HTML basics to styled CSS layouts and interactive JavaScript features.', topics: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'] },
+  { icon: <HiPlayCircle />, title: 'Game Design', age: 'Ages 11–18+', desc: 'Design and build original games from concept to completion. Covers game mechanics, level design, and basic programming logic.', topics: ['Game Mechanics', 'Level Design', 'Storytelling'] },
+  { icon: <HiCommandLine />, title: 'Python Programming', age: 'Ages 13–18+', desc: 'Industry-standard text-based programming. Covers variables, loops, functions, and real-world project development.', topics: ['Python', 'Algorithms', 'Data Structures', 'Projects'] },
+  { icon: <HiCpuChip />, title: 'Robotics — Intro', age: 'Ages 10–14', desc: 'Build and program beginner robots using Micro:bit. Understand sensors, motors, and basic programming logic through hands-on challenges.', topics: ['Micro:bit', 'Sensors', 'Block Code', 'Challenges'] },
+  { icon: <HiCog6Tooth />, title: 'Robotics — Advanced', age: 'Ages 14–18+', desc: 'Advanced autonomous robot design using Arduino. Competition-ready preparation including inter-school robotics challenges and tech expos.', topics: ['Arduino', 'Autonomous Systems', 'Competition Prep'], featured: true },
 ];
 
 const deliveryModes = [
-  { icon: '🏫', title: 'In-School Co-Curricular', desc: 'Weekly sessions during school terms, delivered at partner schools. Schools may host onsite or offsite and select coding or robotics.' },
-  { icon: '🌆', title: 'After-School & Weekend', desc: 'Weekday and Saturday classes for working parents and independent learners. Open to school-going and out-of-school youth.' },
-  { icon: '⛺', title: 'Holiday Bootcamps', desc: 'Intensive 2-week camps during school holidays. Fast-track skills acquisition with practical projects and demonstrations. Certificate included.' },
-  { icon: '🏆', title: 'Competitions & Expos', desc: 'Annual Tech Expo and inter-school Robotics Challenges to showcase learner progress and connect with industry mentors.' },
+  { icon: <HiAcademicCap />, title: 'In-School Co-Curricular', desc: 'Weekly sessions during school terms, delivered at partner schools. Schools may host onsite or offsite and select coding or robotics.' },
+  { icon: <HiBuildingOffice2 />, title: 'After-School & Weekend', desc: 'Weekday and Saturday classes for working parents and independent learners. Open to school-going and out-of-school youth.' },
+  { icon: <HiCalendarDays />, title: 'Holiday Bootcamps', desc: 'Intensive 2-week camps during school holidays. Fast-track skills acquisition with practical projects and demonstrations. Certificate included.' },
+  { icon: <HiTrophy />, title: 'Competitions & Expos', desc: 'Annual Tech Expo and inter-school Robotics Challenges to showcase learner progress and connect with industry mentors.' },
 ];
 
 const Programs: React.FC = () => {

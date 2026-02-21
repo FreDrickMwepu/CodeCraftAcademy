@@ -1,10 +1,11 @@
 import React from 'react';
 import ContactForm from '../components/ContactForm';
+import { HiPhone, HiEnvelope, HiMapPin } from 'react-icons/hi2';
 
 const contactItems = [
-  { icon: '📞', label: 'Phone / WhatsApp', lines: ['+260 96 9524755', '+260 97 5608103'] },
-  { icon: '📧', label: 'Email', lines: ['codecraftacademytm@gmail.com'] },
-  { icon: '📍', label: 'Location', lines: ['Kitwe, Copperbelt Province, Zambia'] },
+  { icon: <HiPhone />, label: 'Phone / WhatsApp', lines: ['+260 96 9524755', '+260 97 5608103'] },
+  { icon: <HiEnvelope />, label: 'Email', lines: ['codecraftacademytm@gmail.com'] },
+  { icon: <HiMapPin />, label: 'Location', lines: ['Kitwe, Copperbelt Province, Zambia'] },
 ];
 
 const Contact: React.FC = () => {
@@ -72,7 +73,7 @@ const Contact: React.FC = () => {
           <div className="map-placeholder">
             <div className="map-grid-overlay"></div>
             <div style={{ position: 'relative', zIndex: 2, textAlign: 'center' }}>
-              <div style={{ fontSize: '3rem', marginBottom: 8 }}>📍</div>
+              <div style={{ fontSize: '3rem', marginBottom: 8 }}><HiMapPin /></div>
               <div style={{ color: 'var(--orange)', fontWeight: 700, fontSize: '1.1rem' }}>Kitwe, Copperbelt</div>
               <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.875rem', marginTop: 4 }}>Zambia</div>
             </div>

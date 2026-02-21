@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
 :root {
   --orange: #FFA202;
@@ -9,7 +13,7 @@
   --grey-light: #F5F5F5;
   --grey-mid: #E8E8E8;
   --grey-text: #6B6B6B;
-  --font: 'Poppins', sans-serif;
+  --font: 'Space Mono', monospace;
   --nav-h: 72px;
 }
 

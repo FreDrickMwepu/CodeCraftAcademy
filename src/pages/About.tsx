@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import CTAStrip from '../components/CTAStrip';
+import { HiBookOpen, HiCurrencyDollar, HiUserGroup, HiArrowTrendingDown } from 'react-icons/hi2';
 
 const problems = [
-  { icon: '📚', title: 'Theory-Only ICT Education', desc: 'Schools teach computer studies with minimal hands-on programming or robotics experience.' },
-  { icon: '💰', title: 'Limited Affordable Access', desc: 'Coding and robotics training has been out of reach for low- and middle-income families.' },
-  { icon: '👩‍💻', title: 'Teacher Capacity Gaps', desc: 'Teachers lack specialized training in AI, robotics, and modern software development.' },
-  { icon: '📉', title: 'Youth Skills Mismatch', desc: 'Many students complete secondary school without market-relevant digital skills, fuelling unemployment.' },
+  { icon: <HiBookOpen />, title: 'Theory-Only ICT Education', desc: 'Schools teach computer studies with minimal hands-on programming or robotics experience.' },
+  { icon: <HiCurrencyDollar />, title: 'Limited Affordable Access', desc: 'Coding and robotics training has been out of reach for low- and middle-income families.' },
+  { icon: <HiUserGroup />, title: 'Teacher Capacity Gaps', desc: 'Teachers lack specialized training in AI, robotics, and modern software development.' },
+  { icon: <HiArrowTrendingDown />, title: 'Youth Skills Mismatch', desc: 'Many students complete secondary school without market-relevant digital skills, fuelling unemployment.' },
 ];
 
 const objectives = [
