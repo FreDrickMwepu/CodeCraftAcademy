@@ -1,31 +1,32 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './Header.css'; // Assuming you will create a Header.css for styling
+import { Link, useLocation } from 'react-router-dom';
 
 const Header: React.FC = () => {
-    return (
-        <header className="header">
-            <div className="logo">
-                <h1>CodeCraft Academy</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/about">About</Link>
-                    </li>
-                    <li>
-                        <Link to="/programs">Programs</Link>
-                    </li>
-                    <li>
-                        <Link to="/contact">Contact</Link>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    );
+  const location = useLocation();
+
+  const isActive = (path: string): boolean => location.pathname === path;
+
+  return (
+    <nav>
+      <div className="nav-inner">
+        <Link to="/" className="nav-logo">
+          <div className="nav-logo-icon"></div>
+          <div className="nav-logo-text">
+            <strong>CodeCraft</strong>
+            <span>Academy</span>
+          </div>
+        </Link>
+        <div className="nav-links">
+          <Link to="/" className={`nav-link${isActive('/') ? ' active' : ''}`}>Home</Link>
+          <Link to="/about" className={`nav-link${isActive('/about') ? ' active' : ''}`}>About Us</Link>
+          <Link to="/programs" className={`nav-link${isActive('/programs') ? ' active' : ''}`}>Programs</Link>
+          <Link to="/pricing" className={`nav-link${isActive('/pricing') ? ' active' : ''}`}>Fees</Link>
+          <Link to="/contact" className={`nav-link${isActive('/contact') ? ' active' : ''}`}>Contact</Link>
+        </div>
+        <Link to="/contact" className="btn btn--orange nav-cta">Enrol Now &rarr;</Link>
+      </div>
+    </nav>
+  );
 };
 
 export default Header;
