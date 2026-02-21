@@ -15,15 +15,11 @@ const AboutTeaser: React.FC = () => {
         <div className="about-grid">
           <div className="about-visual fade-in">
             <div className="about-img-main">
-              <div className="about-img-inner">
-                <div className="about-img-pattern"></div>
-                <div className="about-img-text">
-                  <div className="big-num">4IR</div>
-                  <div className="mission-text">
-                    Preparing Zambia's Youth<br />for the 4th Industrial Revolution
-                  </div>
-                </div>
-              </div>
+              <img
+                src="/resources/Pilot%20Program%20Day%201/SML%20STUDIOS%20(5%20of%2043).jpg"
+                alt="Students at CodeCraft Academy pilot program"
+                className="about-img-photo"
+              />
             </div>
             <div className="about-accent">
               <div className="big">DEBS</div>
