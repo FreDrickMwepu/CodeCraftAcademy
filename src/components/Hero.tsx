@@ -45,36 +45,21 @@ const Hero: React.FC = () => {
           </div>
         </div>
         <div className="hero-visual">
-          <div className="hero-robot-wrap">
-            <div className="hero-robot-bg"></div>
-            <div className="hero-robot-inner">
-              <svg className="robot-svg" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="45" y="55" width="90" height="70" rx="16" fill="#FFA202" />
-                <rect x="57" y="68" width="66" height="44" rx="10" fill="#1E1D1D" />
-                <circle cx="76" cy="88" r="10" fill="#FFA202" />
-                <circle cx="104" cy="88" r="10" fill="#FFA202" />
-                <circle cx="78" cy="86" r="4" fill="#1E1D1D" />
-                <circle cx="106" cy="86" r="4" fill="#1E1D1D" />
-                <line x1="90" y1="55" x2="90" y2="35" stroke="#FFA202" strokeWidth="4" strokeLinecap="round" />
-                <circle cx="90" cy="30" r="8" fill="#FFA202" />
-                <circle cx="90" cy="30" r="4" fill="#1E1D1D" />
-                <rect x="55" y="130" width="70" height="30" rx="10" fill="#FFA202" opacity="0.8" />
-                <rect x="62" y="158" width="20" height="14" rx="6" fill="#FFA202" opacity="0.6" />
-                <rect x="98" y="158" width="20" height="14" rx="6" fill="#FFA202" opacity="0.6" />
-                <rect x="18" y="130" width="30" height="14" rx="7" fill="#FFA202" opacity="0.7" />
-                <rect x="132" y="130" width="30" height="14" rx="7" fill="#FFA202" opacity="0.7" />
-                <text x="66" y="108" fontFamily="monospace" fontSize="11" fill="#FFA202" fontWeight="bold">&lt;/&gt;</text>
-              </svg>
+          <div className="hero-image-collage">
+            <img
+              src="/resources/Pilot%20Program%20Day%201/SML%20STUDIOS%20(1%20of%2043).jpg"
+              alt="Students learning to code at CodeCraft Academy"
+              className="hero-img hero-img--main"
+            />
+            <img
+              src="/resources/Pilot%20Program%20Day%201/SML%20STUDIOS%20(10%20of%2043).jpg"
+              alt="Hands-on robotics session"
+              className="hero-img hero-img--accent"
+            />
+            <div className="hero-img-badge">
+              <span className="hero-img-badge-num">Pilot</span>
+              <span className="hero-img-badge-label">Program</span>
             </div>
-            <div className="hero-orbits">
-              <div className="orbit-dot"></div>
-            </div>
-            <div className="hero-orbits-2">
-              <div className="orbit-dot-2"></div>
-            </div>
-            <div className="code-card code-card-1">print("Hello, World!")</div>
-            <div className="code-card code-card-2">{'for i in range(10): 🤖'}</div>
-            <div className="code-card code-card-3">robot.move(forward)</div>
           </div>
         </div>
       </div>
