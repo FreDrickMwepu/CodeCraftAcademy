@@ -9,11 +9,11 @@ const Footer: React.FC = () => {
         <div className="footer-grid">
           <div className="footer-brand">
             <div className="nav-logo" style={{ cursor: 'default' }}>
-              <div className="nav-logo-icon"></div>
-              <div className="nav-logo-text">
-                <strong>CodeCraft</strong>
-                <span>Academy</span>
-              </div>
+              <img
+                src="/resources/Logo/logowhite.svg"
+                alt="CodeCraft Academy"
+                className="nav-logo-img"
+              />
             </div>
             <p>
               Empowering the next generation of digital innovators on the Copperbelt,

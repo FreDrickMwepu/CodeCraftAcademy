@@ -17,7 +17,44 @@ const ScrollToTop: React.FC = () => {
   return null;
 };
 
+/* Global fade-in observer: adds 'visible' class to any .fade-in element on scroll */
+const useFadeInObserver = () => {
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    // Observe all current .fade-in elements
+    const observe = () => {
+      document.querySelectorAll('.fade-in:not(.visible)').forEach((el) => {
+        observer.observe(el);
+      });
+    };
+
+    observe();
+
+    // Re-observe after route changes (MutationObserver watches for new .fade-in elements)
+    const mutation = new MutationObserver(() => observe());
+    mutation.observe(document.body, { childList: true, subtree: true });
+
+    return () => {
+      observer.disconnect();
+      mutation.disconnect();
+    };
+  }, []);
+};
+
 const App: React.FC = () => {
+  useFadeInObserver();
+
   return (
     <Router>
       <div className="App">

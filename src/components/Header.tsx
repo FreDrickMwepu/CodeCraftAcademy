@@ -23,11 +23,11 @@ const Header: React.FC = () => {
     <nav>
       <div className="nav-inner">
         <Link to="/" className="nav-logo">
-          <div className="nav-logo-icon"></div>
-          <div className="nav-logo-text">
-            <strong>CodeCraft</strong>
-            <span>Academy</span>
-          </div>
+          <img
+            src="/resources/Logo/logowhite.svg"
+            alt="CodeCraft Academy"
+            className="nav-logo-img"
+          />
         </Link>
 
         {/* Desktop Links */}
