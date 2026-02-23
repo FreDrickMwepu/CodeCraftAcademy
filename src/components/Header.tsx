@@ -24,7 +24,7 @@ const Header: React.FC = () => {
       <div className="nav-inner">
         <Link to="/" className="nav-logo">
           <img
-            src="/resources/Logo/logowhite.svg"
+            src="/resources/Logo/logowb.svg"
             alt="CodeCraft Academy"
             className="nav-logo-img"
           />

@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           <div className="footer-brand">
             <div className="nav-logo" style={{ cursor: 'default' }}>
               <img
-                src="/resources/Logo/logowhite.svg"
+                src="/resources/Logo/logowb.svg"
                 alt="CodeCraft Academy"
                 className="nav-logo-img"
               />

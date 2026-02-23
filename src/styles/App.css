@@ -39,7 +39,7 @@ nav {
   display: flex; align-items: center; gap: 10px; cursor: pointer; text-decoration: none;
 }
 .nav-logo-img {
-  height: 42px; width: auto; display: block;
+  height: 54px; width: auto; display: block;
 }
 .nav-links { display: flex; align-items: center; gap: 8px; }
 .nav-link {
