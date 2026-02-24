@@ -20,7 +20,7 @@ const CTAStrip: React.FC<CTAStripProps> = ({
         <p>{subtitle}</p>
         <div className="actions">
           <Link to={primaryLink} className="btn btn--black">{primaryText}</Link>
-          <Link to={secondaryLink} className="btn btn--outline">{secondaryText}</Link>
+          <Link to={secondaryLink} className="btn btn--outline-black">{secondaryText}</Link>
         </div>
       </div>
     </div>
